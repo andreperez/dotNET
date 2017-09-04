@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using System.Data.SqlClient;
+using System.Collections.Generic;
 
 namespace edX.DataApp.Console
 {
@@ -23,7 +20,16 @@ namespace edX.DataApp.Console
             {
                 await connection.OpenAsync();
                 System.Console.WriteLine("Connection Successful");
+
                 //await new DataAdapter().RunLogic(connection);
+                //await new DataReader().RunLogic();
+
+                //IEnumerable<Customer> customers = await new GenericQuery().RunLogic(connection);
+
+                //foreach (Customer customer in customers)
+                //{
+                //    System.Console.WriteLine($"[{customer.Id:000}]\t{customer.Company}\t{customer.Email}");
+                //}
             }
         }
     }
