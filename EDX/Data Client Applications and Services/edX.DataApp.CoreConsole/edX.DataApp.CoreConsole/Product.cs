@@ -17,5 +17,7 @@ namespace edX.DataApp.CoreConsole
         public decimal StandardCost { get; set; }
 
         public decimal ListPrice { get; set; }
+
+        public DateTime? ReleaseDate { get; set; }
     }
 }
