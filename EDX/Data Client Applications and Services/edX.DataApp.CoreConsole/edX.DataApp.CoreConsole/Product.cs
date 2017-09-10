@@ -19,5 +19,11 @@ namespace edX.DataApp.CoreConsole
         public decimal ListPrice { get; set; }
 
         public DateTime? ReleaseDate { get; set; }
+
+        public bool? SafetyReviewResult { get; set; }
+
+        public Guid ExternalId { get; set; }
+
+        public virtual ProductCategory ProductCategory { get; set; }
     }
 }
